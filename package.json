@@ -35,6 +35,12 @@
     "extends": "xo-space/esnext",
     "env": {
       "mocha": true
+    },
+    "ecmaFeatures": {
+      "modules": true
+    },
+    "rules": {
+      "prefer-arrow-callback": 0
     }
   },
   "repository": "battlemidget/conjure-creator",
@@ -42,5 +48,9 @@
     "prepublish": "gulp prepublish",
     "test": "gulp"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "getconfig": "^2.2.0",
+    "hapi": "^12.1.0"
+  }
 }
